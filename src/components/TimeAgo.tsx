@@ -1,0 +1,12 @@
+'use client'
+import ReactTimeAgo from "react-time-ago";
+import TimeAgo from 'javascript-time-ago';
+import en from 'javascript-time-ago/locale/en';
+TimeAgo.addDefaultLocale(en)
+
+interface Props {
+    date: Date;
+}
+export default function TimeFormat(props: Props) {
+    return <ReactTimeAgo date={props.date} />
+}

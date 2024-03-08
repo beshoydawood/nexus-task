@@ -1,0 +1,34 @@
+{
+  "name": "nexus-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "@mui/x-charts": "^6.19.5",
+    "@mui/x-data-grid": "^6.19.6",
+    "axios": "^1.6.7",
+    "mongodb": "^6.4.0",
+    "next": "^14.1.1",
+    "nextjs-toploader": "^1.6.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-time-ago": "^7.3.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.0",
+    "@types/leaflet": "^1.9.8",
+    "@types/node": "20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
