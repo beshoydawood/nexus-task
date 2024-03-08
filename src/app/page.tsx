@@ -10,9 +10,15 @@ async function getData() {
     const uri = process.env.API_URI;
     const count = await fetch(uri+'/api/count');
     const data = await fetch(uri+'/api');
+    let c = {offline: 0, online: 0, total: 0, countries: 0},
+        d = [];
+    try {
+        c = await count.json();
+        d = await data.json()
+    } catch (e) {}
     return {
-        count: await count.json(),
-        data: await data.json()
+        count: c,
+        data: d
     }
 }
 export default async function Dashboard() {
