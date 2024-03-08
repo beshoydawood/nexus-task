@@ -9,7 +9,11 @@ export const metadata = {
 async function getData() {
     const uri = process.env.API_URI;
     const data = await fetch(uri+'/api');
-    return await data.json();
+    let d = [];
+    try {
+        d = await data.json();
+    } catch (e) {}
+    return d;
 }
 
 export default async function Units() {
